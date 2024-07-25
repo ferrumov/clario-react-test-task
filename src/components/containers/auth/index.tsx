@@ -1,6 +1,6 @@
 import { PropsWithChildren } from "react";
 
-import { StarsBg } from "components/icon";
+import { StarsBg } from "../../icons";
 
 import * as Styles from "./styles";
 

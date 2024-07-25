@@ -21,9 +21,7 @@ const SignUpPage = () => {
         initialValues={initialValues}
         validationSchema={validationSchema}
       >
-        {({ errors }) => {
-          console.log({ errors });
-
+        {() => {
           return (
             <Styles.Form>
               <Styles.InputsContainer>

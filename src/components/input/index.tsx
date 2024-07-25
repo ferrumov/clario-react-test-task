@@ -1,8 +1,8 @@
 import { useField } from "formik";
 import { useState, useMemo } from "react";
 
-import { EyeCrossIcon, EyeIcon } from "components/icon";
-import { IconButton } from "components/buttons";
+import { IconButton } from "../buttons";
+import { EyeCrossIcon, EyeIcon } from "../icons";
 
 import * as Styled from "./styles";
 import { InputProps, InputFieldProps } from "./types";

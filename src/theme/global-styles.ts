@@ -39,4 +39,6 @@ export const GlobalStyles = createGlobalStyle`
         line-height: 28px;
         font-family: "Inter", sans-serif !important;
     }
+
+    
 `;
