@@ -2,9 +2,8 @@ import React from "react";
 import { ThemeProvider } from "styled-components";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+import { NavigationContainer } from "components";
 import { GlobalStyles } from "theme/global-styles";
-
-import { Container } from "./styles";
 
 const SignUpPage = React.lazy(() => import("pages/auth/sign-up"));
 
@@ -14,11 +13,11 @@ function App() {
       <GlobalStyles />
 
       <BrowserRouter>
-        <Container>
+        <NavigationContainer>
           <Routes>
-            <Route path="" element={<SignUpPage />}></Route>
+            <Route path="/sign-up" element={<SignUpPage />}></Route>
           </Routes>
-        </Container>
+        </NavigationContainer>
       </BrowserRouter>
     </ThemeProvider>
   );

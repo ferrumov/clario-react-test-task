@@ -7,7 +7,19 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
     }
 
+    html {
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden; 
+    }
+
     body {
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
         overflow-x: hidden;
         overflow-y: hidden;
     }
@@ -21,6 +33,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     h1 {
+        color: #4A4E71;
         font-size: 28px;
         font-weight: 700;
         line-height: 28px;
