@@ -1,6 +1,8 @@
 import { PropsWithChildren } from "react";
 
-import { Container } from "./styles";
+import { StarsBg } from "components/icon";
+
+import * as Styles from "./styles";
 
 interface AuthContainerProps {
   title: string;
@@ -11,9 +13,15 @@ export const AuthContainer = ({
   children,
 }: PropsWithChildren<AuthContainerProps>) => {
   return (
-    <Container>
-      <h1>{title}</h1>
-      {children}
-    </Container>
+    <Styles.MainContainer>
+      <Styles.Container>
+        <h1>{title}</h1>
+        {children}
+      </Styles.Container>
+
+      <Styles.StarsContainer>
+        <StarsBg />
+      </Styles.StarsContainer>
+    </Styles.MainContainer>
   );
 };
